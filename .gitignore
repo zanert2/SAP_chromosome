@@ -1,32 +1,39 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# Compiled Sources #
+####################
 *.exe
-*.out
-*.app
+*.o
+*.mod
+*.so
+
+# Packages #
+############
+*.gz
+*.zip
+*.7z
+
+# Logs and Databases #
+######################
+*.log
+*.inp
+
+
+# Input Directories #
+#####################
+/input/*
+
+# Output Directories #
+######################
+/output/*
+
+# Debugging Directories #
+#########################
+/debugging/*
+
+# Data Directories #
+####################
+/figures*/*
+/data*/*
+
+# Temporary Files #
+###################
+*~
