@@ -7,7 +7,9 @@ Email: brg4@illinois.edu
 ### Directories ###
 
  fortran/ - contains source code for primary fortran program
+ 
  python/ - contains Jupyter notebooks used to pre-process inputs and post-process outputs of the fortran program
+ 
  example/ - contains an example set of input files
 
 ### Installation ###
