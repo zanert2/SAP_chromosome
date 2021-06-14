@@ -942,7 +942,7 @@ contains
 
        !iterate to loop back around the ring
        !do while (count .lt. in_ring%N_nodes-2)
-       do while (count .lt. min(in_ring%N_nodes/4,1000))
+       do while (count .lt. min(in_ring%N_nodes/4,200))
 
           !transform the count moved along the ring to account for crossing the origin of the ring
           count_trans=count_transform(count,i_node,in_ring%N_nodes)
