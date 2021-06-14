@@ -1,5 +1,10 @@
 module octree
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!  this implementation of octrees in fortran is based on the following source code  !!!!
+!!!!!!!!!!!!!!!!!!!!!!!  https://github.com/dongli/fortran-octree  !!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
   use params
   
   implicit none
