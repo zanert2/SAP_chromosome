@@ -14,11 +14,11 @@ Author: Benjamin R. Gilbert
 
  You will need to specify the location of your installed fortran compiler using the variable "F90" in the Makefile.
 
- The program may optionally use an external BLAS library. Enable this by commenting and uncommenting the corresponding lines in the Makefile. The program has been tested and built using OpenBLAS-v0.3.9.
+ The program may optionally use an external BLAS library. Enable this by compiling the alternative program listed in the Makefile. The alternative program has been tested and built using OpenBLAS-v0.3.9.
 
  1) change directories to the fortran directory
  2) make clean
- 3) make ring_generate.exe
+ 3) make ring_generate.exe (or ring_generate_OBLAS.exe)
 
  Prior to building, the file params.f90 can be modified to tune the memory usage, change the maximum number of threads, specify the precision of real and integer variables, and the log file.
 

@@ -942,7 +942,7 @@ contains
 
        !iterate to loop back around the ring
        !do while (count .lt. in_ring%N_nodes-2)
-       do while (count .lt. min(in_ring%N_nodes/4,200))
+       do while (count .lt. min(in_ring%N_nodes/4,500))
 
           !transform the count moved along the ring to account for crossing the origin of the ring
           count_trans=count_transform(count,i_node,in_ring%N_nodes)
@@ -1376,21 +1376,17 @@ contains
     
     !apply the rotational matrix to the subset of nodes between the reflect pair
     x_temp=matmul(rot_matrix,x_temp)
-    !x_temp=0.0d0
-    !call dgemm('n','n',&
-         !in_ring%dim,reflect_move%N,in_ring%dim,&
-         !1.0d0,&
-         !rot_matrix,in_ring%dim,&
-         !dble(x_temp),in_ring%dim,&
-         !0.0d0,&
-         !x_temp,in_ring%dim)
+    ! call dgemm('n','n',&
+    !      in_ring%dim,reflect_move%N,in_ring%dim,&
+    !      1.0d0,&
+    !      rot_matrix,in_ring%dim,&
+    !      dble(x_temp),in_ring%dim,&
+    !      0.0d0,&
+    !      x_temp,in_ring%dim)
     
     do i_node=1,reflect_move%N
        x_temp(:,i_node)=x_mid+x_temp(:,i_node)
     end do
-
-    !write(unit_log,*)"new node_indices"
-    !write(unit_log,*)reflect_move%node_indices
     
     !round the result and convert it to integers
     reflect_move%x=int(nint(x_temp))
