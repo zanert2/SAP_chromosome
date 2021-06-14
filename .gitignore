@@ -14,7 +14,7 @@
 # Logs and Databases #
 ######################
 *.log
-*.inp
+#*.inp
 
 
 # Input Directories #
